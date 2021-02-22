@@ -17,7 +17,7 @@
                 <td>Immagine</td>
                 <td>Data Creazione</td>
                 <td>Data ultima modifica</td>
-                <td></td>
+                <td>Status</td>
                 <td></td>
                 <td></td>
             </tr>
@@ -33,6 +33,8 @@
                 <td>{{ $blog->img_path}}</td>
                 <td>{{ $blog->created_at}}</td>
                 <td>{{ $blog->updated_at}}</td>
+                <td>{{ $blog->infoPost->post_status}}</td>
+                {{-- bottone di ritorno alla pagina BLOGS --}}
                 <td><a href="{{ route('blogs.show', $blog->id) }}" class="btn btn-primary">
                         <i class="fas fa-search"></i>
                     </a></td>

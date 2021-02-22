@@ -17,7 +17,7 @@ class CreateCommentsTable extends Migration
             $table->id();
             $table->unsignedBigInteger('blog_id');
             $table->string('text',200);
-            $table->string('author');
+            $table->string('author', 20);
             $table->timestamps();
 
             //relazione
