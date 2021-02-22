@@ -20,7 +20,7 @@ class CreateBlogsTable extends Migration
             $table->string('name', 50);
             $table->text('comment');
             $table->longText('text');
-            $table->string('img_path ');
+            $table->string('img_path');
             //fine delle mie colonne db
     
             $table->timestamps(); // con questa riga mi ridara' i dati di created_at e update_at
